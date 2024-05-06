@@ -130,12 +130,6 @@ extension Luminous {
             return SystemVersion.init(withVersion: _systemVersion)
         }
         
-        /// The current boot time expressed in seconds.
-        public static var bootTime: TimeInterval {
-            
-            return ProcessInfo().systemUptime
-        }
-        
         @available(iOS 9.0,*)
         /// Check if the low power mode is currently enabled (iOS 9 and above).
         public static var isLowPowerModeEnabled: Bool {
